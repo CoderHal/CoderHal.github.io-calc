@@ -1,5 +1,62 @@
 body{
-    background: #2f2f2f
+    background: rgb(230, 230, 210);body{
+        background: rgb(230, 230, 210);
+    }
+    form {
+        max-width: 20em;
+        margin: 0 auto;
+        background-color:  #2e5958;
+    }
+    button {
+        border: 0;
+        font-family: Verdana, sans-serif;
+    }
+    button:hover,
+    button:active,
+    button:focus {
+        outline: none;
+    }
+    .calc_keys{
+        /* background-color: rgb(129, 119, 102); */
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2em;
+        margin-top: -1em;
+    }
+    .calc_keys > *{
+        background-color: #fff;
+        padding: 0.5em 0;
+        position: relative;
+        text-align: center;
+        border-radius: 10%;
+        font-size: 1.3em;
+        margin: 0.25em;
+    }
+    .calc_keys > *:active{
+        background-color: rgb(230, 230, 210);
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5)
+    }
+    .calc_display{
+        background-color: rgb(230, 230, 210);
+        margin: 0 2em;
+        padding: 1em 0.8em;
+        text-align: right;
+        border-radius: 1.5em; 
+        width: 75%;
+    
+    }
+    .description{
+        text-align: center;
+        color:  rgb(230, 230, 210);
+        padding: 0.5em;
+        margin-bottom: 0;
+    }
+    .key_equal{
+        grid-column:2/5;
+        border-radius: 3%;
+    }
+s    
 }
 form {
     max-width: 20em;
@@ -24,7 +81,7 @@ button:focus {
     margin-top: -1em;
 }
 .calc_keys > *{
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0.5em 0;
     position: relative;
     text-align: center;
