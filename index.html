@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form name="calculator">
+                <h2 class="description">CALCULATOR</h2>
+                <input class="calc_display" type="text" name ="display" placeholder ="0" disabled>
+                <div class="calc_keys">
+                    <button class="key_operator" type="button" name="add" onclick="calculator.display.value += '+'" >+</button>
+                    <button class="key_operator" type="button" name="subtract" onclick="calculator.display.value += '-'">-</button>
+                    <button class="key_operator" type="button" name="multiply" onclick="calculator.display.value += '*'">&times;</button>
+                    <button class="key_operator" type="button" name="divide" onclick="calculator.display.value += '/'">/</button>
+        
+                    <button class="key_number" type="button" name="seven" onclick="calculator.display.value += '7'">7</button>
+                    <button class="key_number" type="button" name="eight" onclick="calculator.display.value += '8'">8</button>
+                    <button class="key_number" type="button" name="nine" onclick="calculator.display.value += '9'">9</button>
+        
+                    <button class="key_clear" type="button" name="clearAll" onclick="calculator.display.value = ''">AC</button>
+
+                    <button class="key_number" type="button" name="four" onclick="calculator.display.value += '4'">4</button>
+                    <button class="key_number" type="button" name="five" onclick="calculator.display.value += '5'">5</button>
+                    <button class="key_number" type="button" name="six" onclick="calculator.display.value += '6'">6</button>
+        
+                    <button class="key_operator" type="button" name="exponential" onclick="calculator.display.value += 'e'">EXP</button>
+
+                    <button class="key_number" type="button" name="one" onclick="calculator.display.value += '1'">1</button>
+                    <button class="key_number" type="button" name="two" value="-" onclick="calculator.display.value += '2'">2</button>
+                    <button class="key_number" type="button" name="add" value="-" onclick="calculator.display.value += '3'">3</button>
+                    <button class="key_number" type="button" name="decimal" onclick="calculator.display.value += '.'">.</button>
+                    <button class="key_number" type="button" name="add" onclick="calculator.display.value += '0'">0</button>
+        
+                    
+                    
+                    <button class="key_equal" type="button" name ="calculate" onclick="calculator.display.value = eval(calculator.display.value)">=</button>
+                    
+                </div>
+            </form>
+    </body>
+</html>
